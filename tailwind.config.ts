@@ -34,6 +34,32 @@ const config: Config = {
           light: "#E4F5EE",
         },
         canvas: "#F3F2EE",
+
+        // Role dashboard header shades (dark navy family, darkens with role seniority)
+        studentteal: {
+          DEFAULT: "#052846",
+          dark: "#03192E",
+        },
+        teacherteal: {
+          DEFAULT: "#013448",
+          dark: "#012738",
+        },
+        principalnavy: {
+          DEFAULT: "#001C36",
+          dark: "#001126",
+        },
+
+        // Auth screens (Sign-in / Find school) dark navy backdrop + blue brand gradient
+        authnavy: {
+          DEFAULT: "#0A2140",
+          deep: "#040E1E",
+          card: "#081A33",
+          border: "#1E3A5F",
+        },
+        brandblue: {
+          DEFAULT: "#0047F1",
+          light: "#00C8EC",
+        },
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],

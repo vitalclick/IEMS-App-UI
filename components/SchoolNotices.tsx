@@ -31,12 +31,18 @@ const notices: Notice[] = [
   },
 ];
 
-export default function SchoolNotices() {
+export default function SchoolNotices({
+  title = "School notices",
+  linkColor = "text-teal",
+}: {
+  title?: string;
+  linkColor?: string;
+}) {
   return (
     <section className="px-5 mt-8">
       <div className="flex items-center justify-between mb-3">
-        <h2 className="text-[17px] font-extrabold text-slate-900">School notices</h2>
-        <button className="text-sm font-semibold text-teal">View all</button>
+        <h2 className="text-[17px] font-extrabold text-slate-900">{title}</h2>
+        <button className={`text-sm font-semibold ${linkColor}`}>View all</button>
       </div>
 
       <div className="rounded-2xl bg-white shadow-card divide-y divide-slate-100">
