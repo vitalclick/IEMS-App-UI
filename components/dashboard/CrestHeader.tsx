@@ -23,14 +23,6 @@ export default function CrestHeader({
           </button>
 
           <Image src="/logo44.png" alt="IEMS" width={477} height={142} className="h-8 w-auto" />
-
-          <div className="leading-tight">
-            <p className="text-[8px] font-bold tracking-wide text-slate-300">
-              INTEGRATED EDUCATION
-              <br />
-              MANAGEMENT SYSTEM
-            </p>
-          </div>
         </div>
 
         <div className="flex items-center gap-3">
