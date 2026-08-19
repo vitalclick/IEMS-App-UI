@@ -44,11 +44,16 @@ export default function PrincipalHeader() {
         </div>
 
         <div className="flex shrink-0 flex-col items-end gap-2">
-          <button className="flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-[12px] font-semibold text-white whitespace-nowrap">
-            <Calendar size={13} />
-            2024/2025 Session
-            <ChevronDown size={12} />
-          </button>
+          <div className="flex items-center gap-1.5">
+            <Calendar size={14} className="text-white/80 shrink-0" />
+            <div>
+              <p className="text-[10px] text-slate-300 leading-tight">Session</p>
+              <button className="flex items-center gap-1 text-[13px] font-bold text-white whitespace-nowrap">
+                2024/2025
+                <ChevronDown size={12} className="text-slate-300" />
+              </button>
+            </div>
+          </div>
           <p className="flex items-center gap-1.5 text-[12px] text-greenaccent">
             <Wifi size={13} />
             You&apos;re online
