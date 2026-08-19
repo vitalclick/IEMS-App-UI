@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans bg-canvas text-slate-900`}>
+      <body className={`${inter.variable} font-sans bg-surface text-slate-900`}>
         <RoleSwitcher />
         {children}
       </body>
