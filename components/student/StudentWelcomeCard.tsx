@@ -5,12 +5,14 @@ export default function StudentWelcomeCard() {
     <div className="relative -mt-12 px-5">
       <div className="rounded-2xl bg-white shadow-card p-5">
         <div className="flex items-center justify-between gap-3">
-          <div>
-            <p className="text-sm text-slate-500">Good morning,</p>
-            <p className="text-lg font-extrabold text-slate-900 leading-snug">
+          <div className="min-w-0 flex-1">
+            <p className="text-[12px] text-slate-500 whitespace-nowrap">Good morning,</p>
+            <p className="text-[15px] font-extrabold text-slate-900 leading-snug whitespace-nowrap">
               Chidi Okonkwo <span aria-hidden>👋</span>
             </p>
-            <p className="text-sm text-slate-500">JSS 2B &bull; Al-Kaija Model School</p>
+            <p className="text-[12px] text-slate-500 whitespace-nowrap">
+              JSS 2B &bull; Al-Kaija Model School
+            </p>
           </div>
 
           <div className="flex shrink-0 items-center gap-2 rounded-xl bg-greenaccent-light px-3 py-2.5">
