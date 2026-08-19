@@ -14,7 +14,6 @@ import ContinueLearning from "@/components/student/ContinueLearning";
 import SchoolNotices from "@/components/SchoolNotices";
 import MotivationBanner from "@/components/student/MotivationBanner";
 import BottomNav from "@/components/BottomNav";
-import RoleSwitcher from "@/components/RoleSwitcher";
 
 const tiles: Tile[] = [
   {
@@ -109,7 +108,6 @@ export default function StudentDashboardPage() {
         <div className="flex-1" />
         <BottomNav role="student" />
       </div>
-      <RoleSwitcher active="student" />
     </main>
   );
 }

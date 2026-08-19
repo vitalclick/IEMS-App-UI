@@ -11,7 +11,6 @@ import IconActionGrid, { IconAction } from "@/components/shared/IconActionGrid";
 import OverviewCards from "@/components/principal/OverviewCards";
 import SchoolNotices from "@/components/SchoolNotices";
 import BottomNav from "@/components/BottomNav";
-import RoleSwitcher from "@/components/RoleSwitcher";
 
 const actions: IconAction[] = [
   { icon: ClipboardCheck, label: "Approvals", ringColor: "border-blueaccent", iconColor: "text-blueaccent", badge: 6 },
@@ -40,7 +39,6 @@ export default function PrincipalDashboardPage() {
         <div className="flex-1" />
         <BottomNav role="principal" />
       </div>
-      <RoleSwitcher active="principal" />
     </main>
   );
 }

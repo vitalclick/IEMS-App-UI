@@ -5,7 +5,6 @@ import QuickActions from "@/components/QuickActions";
 import SchoolNotices from "@/components/SchoolNotices";
 import StayConnectedBanner from "@/components/StayConnectedBanner";
 import BottomNav from "@/components/BottomNav";
-import RoleSwitcher from "@/components/RoleSwitcher";
 
 export default function DashboardPage() {
   return (
@@ -20,7 +19,6 @@ export default function DashboardPage() {
         <div className="flex-1" />
         <BottomNav role="parent" />
       </div>
-      <RoleSwitcher active="parent" />
     </main>
   );
 }

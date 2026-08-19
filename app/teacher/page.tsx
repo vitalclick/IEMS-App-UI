@@ -17,7 +17,6 @@ import IconActionGrid, { IconAction } from "@/components/shared/IconActionGrid";
 import MyClasses from "@/components/teacher/MyClasses";
 import SchoolNotices from "@/components/SchoolNotices";
 import BottomNav from "@/components/BottomNav";
-import RoleSwitcher from "@/components/RoleSwitcher";
 
 const timetable: TimetableItem[] = [
   {
@@ -145,7 +144,6 @@ export default function TeacherDashboardPage() {
         <div className="flex-1" />
         <BottomNav role="teacher" />
       </div>
-      <RoleSwitcher active="teacher" />
     </main>
   );
 }
