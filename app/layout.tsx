@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "IEMS | Parent Dashboard",
-  description: "Education, integrated — parent dashboard overview.",
+  description: "IEMS parent dashboard overview.",
 };
 
 export default function RootLayout({
