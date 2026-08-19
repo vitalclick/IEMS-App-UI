@@ -34,6 +34,10 @@ const config: Config = {
           light: "#E4F5EE",
         },
         canvas: "#F3F2EE",
+        // Near-white page background used by Teacher/Student/Principal
+        // (Parent's reference mock is genuinely warm-cream — see `canvas` —
+        // the others rely on shadow, not color, to lift cards off the page)
+        surface: "#FAFAFA",
 
         // Role dashboard header shades (dark navy family, darkens with role seniority)
         studentteal: {
@@ -68,7 +72,7 @@ const config: Config = {
         xl2: "1.25rem",
       },
       boxShadow: {
-        card: "0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04)",
+        card: "0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 20px -6px rgba(16, 24, 40, 0.10)",
       },
     },
   },
