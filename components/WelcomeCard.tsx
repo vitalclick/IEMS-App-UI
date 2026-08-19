@@ -1,13 +1,12 @@
-import { Calendar, Wifi, ChevronDown, GraduationCap } from "lucide-react";
+import { Calendar, Wifi, ChevronDown } from "lucide-react";
+import SchoolCrest from "@/components/shared/SchoolCrest";
 
 export default function WelcomeCard() {
   return (
     <div className="relative -mt-12 px-5">
       <div className="rounded-2xl bg-white shadow-card p-5">
         <div className="flex items-center gap-4">
-          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-teal-light">
-            <GraduationCap size={28} className="text-teal" strokeWidth={2} />
-          </div>
+          <SchoolCrest className="h-14 w-12 shrink-0" />
           <div>
             <p className="text-sm text-slate-500">Good morning,</p>
             <p className="text-lg font-extrabold text-slate-900 leading-snug">
