@@ -1,7 +1,6 @@
 import { Mail, Lock, Eye, ArrowRight, Link2, Building2, ChevronRight } from "lucide-react";
 import AuthLogo from "@/components/auth/AuthLogo";
 import AuthFooter from "@/components/auth/AuthFooter";
-import RoleSwitcher from "@/components/RoleSwitcher";
 
 export default function SignInPage() {
   return (
@@ -95,7 +94,6 @@ export default function SignInPage() {
         <div className="flex-1" />
         <AuthFooter />
       </div>
-      <RoleSwitcher active="login" />
     </main>
   );
 }

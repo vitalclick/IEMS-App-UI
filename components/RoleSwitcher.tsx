@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const links = [
   { key: "login", label: "Sign in", href: "/login" },
@@ -12,19 +13,23 @@ const links = [
 ] as const;
 
 /**
- * Dev/demo-only floating nav so reviewers can hop between the template's
- * screens. Not part of the Mobile_UI reference designs themselves.
+ * Dev/demo-only toolbar so reviewers can hop between the template's
+ * screens. Rendered once in the root layout, above the phone-shell mockup,
+ * so it never overlaps in-app UI (like each screen's own bottom nav).
+ * Not part of the Mobile_UI reference designs themselves.
  */
-export default function RoleSwitcher({ active }: { active: string }) {
+export default function RoleSwitcher() {
+  const pathname = usePathname();
+
   return (
-    <div className="fixed bottom-3 left-1/2 z-50 -translate-x-1/2">
-      <div className="flex items-center gap-1 rounded-full border border-slate-200 bg-white/95 px-1.5 py-1.5 shadow-lg backdrop-blur">
+    <div className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur">
+      <div className="flex flex-wrap items-center justify-center gap-1 px-2 py-2">
         {links.map((link) => (
           <Link
             key={link.key}
             href={link.href}
             className={`rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors ${
-              active === link.key
+              pathname === link.href
                 ? "bg-slate-900 text-white"
                 : "text-slate-500 hover:bg-slate-100"
             }`}

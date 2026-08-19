@@ -1,7 +1,6 @@
 import { Search, Building2, Lightbulb, ArrowRight, ShieldCheck } from "lucide-react";
 import AuthLogo from "@/components/auth/AuthLogo";
 import AuthFooter from "@/components/auth/AuthFooter";
-import RoleSwitcher from "@/components/RoleSwitcher";
 
 export default function FindSchoolPage() {
   return (
@@ -65,7 +64,6 @@ export default function FindSchoolPage() {
         <div className="flex-1" />
         <AuthFooter />
       </div>
-      <RoleSwitcher active="find-school" />
     </main>
   );
 }

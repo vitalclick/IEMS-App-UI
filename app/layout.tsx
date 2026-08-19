@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import RoleSwitcher from "@/components/RoleSwitcher";
 import "./globals.css";
 
 const inter = Inter({
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans bg-canvas text-slate-900`}>
+        <RoleSwitcher />
         {children}
       </body>
     </html>
