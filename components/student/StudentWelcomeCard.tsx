@@ -1,18 +1,22 @@
 import { CheckCircle2 } from "lucide-react";
+import SchoolCrest from "@/components/shared/SchoolCrest";
 
 export default function StudentWelcomeCard() {
   return (
     <div className="relative -mt-12 px-5">
       <div className="rounded-2xl bg-white shadow-card p-5">
         <div className="flex items-center justify-between gap-3">
-          <div className="min-w-0 flex-1">
-            <p className="text-[12px] text-slate-500 whitespace-nowrap">Good morning,</p>
-            <p className="text-[15px] font-extrabold text-slate-900 leading-snug whitespace-nowrap">
-              Chidi Okonkwo <span aria-hidden>👋</span>
-            </p>
-            <p className="text-[12px] text-slate-500 whitespace-nowrap">
-              JSS 2B &bull; Al-Kaija Model School
-            </p>
+          <div className="flex min-w-0 flex-1 items-center gap-3">
+            <SchoolCrest className="h-14 w-12 shrink-0" />
+            <div className="min-w-0">
+              <p className="text-[12px] text-slate-500 whitespace-nowrap">Good morning,</p>
+              <p className="text-[15px] font-extrabold text-slate-900 leading-snug whitespace-nowrap">
+                Chidi Okonkwo <span aria-hidden>👋</span>
+              </p>
+              <p className="text-[12px] text-slate-500 whitespace-nowrap">
+                JSS 2B &bull; Al-Kaija Model School
+              </p>
+            </div>
           </div>
 
           <div className="flex shrink-0 items-center gap-2 rounded-xl bg-greenaccent-light px-3 py-2.5">
