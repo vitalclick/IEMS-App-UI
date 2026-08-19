@@ -30,14 +30,16 @@ export default function PrincipalHeader() {
       </div>
 
       <div className="mt-6 flex items-start justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <SchoolCrest className="h-12 w-12 shrink-0" />
-          <div>
-            <p className="text-[13px] text-slate-300">Good morning,</p>
-            <p className="text-[17px] font-extrabold text-white leading-tight">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <SchoolCrest className="h-11 w-11 shrink-0" />
+          <div className="min-w-0">
+            <p className="text-[12px] text-slate-300 whitespace-nowrap">Good morning,</p>
+            <p className="text-[14px] font-extrabold text-white leading-tight whitespace-nowrap">
               Mrs. Adaeze Okafor
             </p>
-            <p className="text-[13px] text-slate-300">Principal &bull; Al-Kaija Model School</p>
+            <p className="text-[11px] text-slate-300 whitespace-nowrap">
+              Principal &bull; Al-Kaija Model School
+            </p>
           </div>
         </div>
 
