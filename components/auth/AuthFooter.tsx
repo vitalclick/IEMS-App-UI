@@ -6,9 +6,6 @@ export default function AuthFooter() {
         <span className="mx-2 text-authnavy-border">|</span>
         <span className="text-orange">Integrated Education Management System</span>
       </p>
-      <p className="mt-2 text-xs text-slate-500">
-        &copy; {new Date().getFullYear()} VitalClick Technologies
-      </p>
     </div>
   );
 }
