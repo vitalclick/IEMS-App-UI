@@ -13,7 +13,7 @@ export default function Header() {
             <Menu size={26} strokeWidth={2.2} />
           </button>
 
-          <Image src="/logo.png" alt="IEMS" width={1155} height={424} className="h-9 w-auto" />
+          <Image src="/logo-light1.png" alt="IEMS" width={800} height={246} className="h-9 w-auto" />
         </div>
 
         <div className="flex items-center gap-3">
