@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Menu, Bell, ChevronDown } from "lucide-react";
 
 export default function Header() {
@@ -13,8 +14,8 @@ export default function Header() {
           </button>
 
           <div className="leading-tight">
-            <p className="text-white font-extrabold text-xl tracking-tight">IEMS</p>
-            <p className="text-orange text-[11px] font-semibold -mt-0.5">
+            <Image src="/logo44.png" alt="IEMS" width={477} height={142} className="h-7 w-auto" />
+            <p className="text-orange text-[11px] font-semibold mt-0.5">
               Education, integrated
             </p>
           </div>
