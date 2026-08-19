@@ -8,8 +8,8 @@ import BottomNav from "@/components/BottomNav";
 
 export default function DashboardPage() {
   return (
-    <main className="min-h-screen bg-canvas flex justify-center">
-      <div className="app-shell relative w-full max-w-[430px] min-h-screen bg-canvas flex flex-col">
+    <main className="min-h-screen bg-surface flex justify-center">
+      <div className="app-shell relative w-full max-w-[430px] min-h-screen bg-surface flex flex-col">
         <Header />
         <WelcomeCard />
         <MyChildrenSection />
