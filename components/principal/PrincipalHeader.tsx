@@ -10,7 +10,7 @@ export default function PrincipalHeader() {
           <button aria-label="Open menu" className="text-white/90 hover:text-white transition-colors">
             <Menu size={26} strokeWidth={2.2} />
           </button>
-          <Image src="/logo.png" alt="IEMS" width={1155} height={424} className="h-9 w-auto" />
+          <Image src="/logo44.png" alt="IEMS" width={477} height={142} className="h-8 w-auto" />
         </div>
 
         <div className="flex items-center gap-3">
